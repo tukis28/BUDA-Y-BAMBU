@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú - Buda y Bambú</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #C6B29F; /* Fondo crema */
+        color: #00357A; /* Azul principal */
+    }
+
+    /* Header */
+    header {
+        background-color: #fff;
+        color: #00357A;
+        padding: 25px 0;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header .logo h1 {
+        font-size: 3rem;
+        margin: 0;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #00357A;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 15px 0 0 0;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    nav ul li a {
+        color: #00357A;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 600;
+        position: relative;
+        transition: 0.3s ease;
+    }
+
+    nav ul li a i {
+        margin-right: 5px;
+    }
+
+    nav ul li a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0%;
+        height: 2px;
+        background-color: #00357A;
+        transition: 0.3s ease;
+    }
+
+    nav ul li a:hover::after {
+        width: 100%;
+    }
+
+    /* Menú Section */
+    .menu-section {
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .menu-section h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+        color: #00357A;
+    }
+
+    .menu-categories {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .menu-categories a {
+        display: inline-block;
+        padding: 20px 40px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #C6B29F;
+        background-color: #00357A;
+        border-radius: 12px;
+        text-decoration: none;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        transition: 0.3s ease;
+    }
+
+    .menu-categories a:hover {
+        background-color: #fff;
+        color: #00357A;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+    }
+
+    /* Footer */
+    footer {
+        background-color: #00357A;
+        color: #C6B29F;
+        text-align: center;
+        padding: 25px;
+        font-size: 1rem;
+    }
+
+    footer .social i {
+        margin: 0 10px;
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+
+    footer .social i:hover {
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Buda y Bambú</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html"><i class="fas fa-home"></i>Inicio</a></li>
+                <li><a href="reservar.html"><i class="fas fa-calendar-alt"></i>Reservar</a></li>
+                <li><a href="sobre_nosotros.html"><i class="fas fa-info-circle"></i>Sobre Nosotros</a></li>
+                <li><a href="menu.html"><i class="fas fa-utensils"></i>Menú</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Menú Desplegable -->
+    <section class="menu-section">
+        <h2>Menú</h2>
+        <div class="menu-categories">
+            <a href="alimentos.html"><i class="fas fa-bread-slice"></i>Alimentos</a>
+            <a href="postres.html"><i class="fas fa-ice-cream"></i>Postres</a>
+            <a href="cocteles.html"><i class="fas fa-cocktail"></i>Cocteles</a>
+            <a href="bebidas.html"><i class="fas fa-wine-glass-alt"></i>Bebidas</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Buda y Bambú | Todos los derechos reservados</p>
+        <div class="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Culinario Oriental - Buda y Bambú</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #C6B29F;
+      color: #00357A;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    form {
+      background: #fff8f0;
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      width: 450px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #00357A;
+      margin-bottom: 25px;
+      font-size: 1.8rem;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 500;
+      color: #00357A;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border-radius: 12px;
+      border: 1px solid #00357A;
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: #00357A;
+      background: #fff8f0;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #00357A;
+      outline: none;
+      box-shadow: 0 0 5px rgba(0,53,122,0.5);
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 14px;
+      background: #00357A;
+      color: #fff;
+      border: none;
+      border-radius: 15px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #001f4d;
+    }
+
+    .nota {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #00357A;
+      text-align: center;
+      line-height: 1.4;
+      font-style: italic;
+    }
+
+    .nota span {
+      font-weight: 600;
+    }
+
+    /* Íconos dentro de labels */
+    label i {
+      margin-right: 8px;
+      color: #00357A;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://formspree.io/f/mpwlgwkk" method="POST">
+    <h2><i class="fas fa-utensils"></i> Formulario Culinario Oriental</h2>
+
+    <label for="nombre"><i class="fas fa-user"></i>Tu nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email"><i class="fas fa-envelope"></i>Tu correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="platillo"><i class="fas fa-hamburger"></i>Platillo favorito:</label>
+    <input type="text" id="platillo" name="platillo_favorito">
+
+    <label for="ingrediente"><i class="fas fa-carrot"></i>Ingrediente que más usas:</label>
+    <input type="text" id="ingrediente" name="ingrediente_favorito">
+
+    <label for="nivel"><i class="fas fa-star"></i>Nivel de experiencia culinaria:</label>
+    <select id="nivel" name="nivel_experiencia">
+      <option value="principiante">Principiante</option>
+      <option value="intermedio">Intermedio</option>
+      <option value="avanzado">Avanzado</option>
+      <option value="chef">Chef Profesional</option>
+    </select>
+
+    <label for="receta"><i class="fas fa-book"></i>Cuéntanos tu receta especial:</label>
+    <textarea id="receta" name="receta" rows="4"></textarea>
+
+    <label for="cocina"><i class="fas fa-globe"></i>Tipo de cocina que prefieres:</label>
+    <select id="cocina" name="cocina_preferida">
+      <option value="mexicana">Mexicana 🌮</option>
+      <option value="italiana">Italiana 🍝</option>
+      <option value="japonesa">Japonesa 🍣</option>
+      <option value="china">China 🥟</option>
+      <option value="tailandesa">Tailandesa 🍜</option>
+      <option value="francesa">Francesa 🥖</option>
+      <option value="internacional">Internacional 🌍</option>
+    </select>
+
+    <label for="postre"><i class="fas fa-ice-cream"></i>¿Postres o salados?</label>
+    <select id="postre" name="gusto_postre_salado">
+      <option value="postres">Postres 🍰</option>
+      <option value="salados">Salados 🍲</option>
+      <option value="ambos">Ambos 😋</option>
+    </select>
+
+    <label for="utensilio"><i class="fas fa-blender"></i>Utensilio de cocina más usado:</label>
+    <input type="text" id="utensilio" name="utensilio_favorito" placeholder="Ej. sartén, cuchillo, batidora">
+
+    <label for="sushi"><i class="fas fa-fish"></i>¿Has preparado sushi?</label>
+    <select id="sushi" name="preparo_sushi">
+      <option value="si">Sí 🍣</option>
+      <option value="no">No 🙁</option>
+      <option value="quiero_aprender">No, pero quiero aprender 🙌</option>
+    </select>
+
+    <label for="ramen"><i class="fas fa-bowl-rice"></i>¿Prefieres ramen o pho?</label>
+    <select id="ramen" name="ramen_o_pho">
+      <option value="ramen">Ramen 🍜</option>
+      <option value="pho">Pho 🍲</option>
+      <option value="ambos">Ambos 😍</option>
+    </select>
+
+    <label for="soya"><i class="fas fa-soap"></i>¿Usas salsa de soya?</label>
+    <select id="soya" name="uso_soya">
+      <option value="tradicional">Salsa de soya tradicional</option>
+      <option value="baja_sodio">Soya baja en sodio</option>
+      <option value="tamari">Tamari (sin gluten)</option>
+      <option value="ninguno">Ninguno</option>
+    </select>
+
+    <label for="te"><i class="fas fa-mug-hot"></i>Tu té oriental favorito:</label>
+    <input type="text" id="te" name="te_favorito" placeholder="Ej. Té verde, té matcha, té jazmín">
+
+    <label for="sugerencias"><i class="fas fa-lightbulb"></i>¿Sugerencias o recomendaciones?</label>
+    <textarea id="sugerencias" name="sugerencias" rows="3" placeholder="Escribe aquí tus sugerencias..."></textarea>
+
+    <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+<p class="nota">
+  ⭐ <span>Nota:</span> Este formulario nos ayuda a conocer las preferencias de nuestros clientes,  
+  lo cual es fundamental para mejorar nuestro menú y brindar una mejor experiencia gastronómica.
+<a href="inicio.html" class="btn-regresar">
+  <i class="fas fa-arrow-left"></i> Regresar al inicio
+</a>
+
+    </p>
+  </form>
+</body>
+</html>

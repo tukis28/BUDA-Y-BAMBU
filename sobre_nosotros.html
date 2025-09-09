@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre Nosotros - Buda y Bambú</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #C6B29F; /* Fondo crema */
+        color: #00357A; /* Azul principal */
+    }
+
+    /* Header */
+    header {
+        background-color: #fff;
+        color: #00357A;
+        padding: 25px 0;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header .logo h1 {
+        font-size: 3rem;
+        margin: 0;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #00357A;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 15px 0 0 0;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    nav ul li a {
+        color: #00357A;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 600;
+        position: relative;
+        transition: 0.3s ease;
+    }
+
+    nav ul li a i {
+        margin-right: 5px;
+    }
+
+    nav ul li a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0%;
+        height: 2px;
+        background-color: #00357A;
+        transition: 0.3s ease;
+    }
+
+    nav ul li a:hover::after {
+        width: 100%;
+    }
+
+    /* Sobre Nosotros Section */
+    .sobre-nosotros {
+        max-width: 800px;
+        margin: 60px auto;
+        background-color: #fff;
+        padding: 40px 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        text-align: center;
+    }
+
+    .sobre-nosotros h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 25px;
+        color: #00357A;
+    }
+
+    .sobre-nosotros p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: #00357A;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #00357A;
+        color: #C6B29F;
+        text-align: center;
+        padding: 25px;
+        font-size: 1rem;
+    }
+
+    footer .social i {
+        margin: 0 10px;
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+
+    footer .social i:hover {
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Buda y Bambú</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html"><i class="fas fa-home"></i>Inicio</a></li>
+                <li><a href="reservar.html"><i class="fas fa-calendar-alt"></i>Reservar</a></li>
+                <li><a href="sobre_nosotros.html"><i class="fas fa-info-circle"></i>Sobre Nosotros</a></li>
+                <li><a href="menu.html"><i class="fas fa-utensils"></i>Menú</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sobre Nosotros -->
+    <section class="sobre-nosotros">
+        <h2><i class="fas fa-leaf"></i> ¿Quiénes Somos?</h2>
+        <p>En Buda y Bambú, fusionamos lo mejor de la gastronomía oriental en un espacio tranquilo y acogedor. Nuestros platos están elaborados con ingredientes frescos y auténticos para que vivas una experiencia única en cada bocado.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Buda y Bambú | Todos los derechos reservados</p>
+        <div class="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+    </footer>
+</body>
+</html>
